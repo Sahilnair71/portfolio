@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+    background-color: #f3f4f6; /* Example: light gray background */
+  }
+  
+  /* Dark mode styles, applied when the body has the 'dark' class */
+  body.dark {
+    background-color: #1f2937; /* Example: dark gray background */
+  }
+  
