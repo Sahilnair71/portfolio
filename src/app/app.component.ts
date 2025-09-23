@@ -1,23 +1,25 @@
-import { Component, effect, HostBinding, inject, OnInit, Renderer2 } from '@angular/core';
+import { Component, effect, HostBinding, inject, OnInit, PLATFORM_ID, Renderer2 } from '@angular/core';
 import { ThemeStore } from './store/themestore';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutCardComponent } from './about-card/about-card.component';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent, AboutCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent{
   private readonly themeStore = inject(ThemeStore);
-  private readonly renderer = inject(Renderer2);
-
+  private readonly platformId = inject(PLATFORM_ID);
   constructor() {
-    effect(() => {
-      // Accessing the signal directly to get its value
-      const isDarkMode = this.themeStore.isDarkMode();
-      document.body.classList.toggle('dark', isDarkMode);
-    });
+    if (isPlatformBrowser(this.platformId)) {
+      effect(() => {
+        const isDarkMode = this.themeStore.isDarkMode();
+        document.body.classList.toggle('dark', isDarkMode);
+      });
+    }
   }
 }
