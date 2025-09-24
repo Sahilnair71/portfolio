@@ -4,10 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutCardComponent } from './about-card/about-card.component';
 import { isPlatformBrowser } from '@angular/common';
+import { AboutSectionComponent } from './about-section/about-section.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, AboutCardComponent],
+  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
