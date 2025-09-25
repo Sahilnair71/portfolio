@@ -1,0 +1,26 @@
+[
+    {
+      "position": "Master's Thesis Student",
+      "company": "Your Company Name",
+      "time": "March 2024 - Present",
+      "location": "Paderborn, Germany",
+      "description": "I am writing a master's thesis on the integration of artificial intelligence (AI) and digital tools in factory planning. This includes a comprehensive literature review, development of a framework, and creating a potential catalogue for AI integration.",
+      "responsibilities": [
+        "Conducted a comprehensive literature review.",
+        "Developed a framework for AI integration.",
+        "Created a potential catalogue for digital planning support.",
+        "Analyzed the limitations of existing tools in factory planning."
+      ]
+    },
+    {
+      "position": "Research Assistant",
+      "company": "Another Company",
+      "time": "September 2023 - February 2024",
+      "location": "Paderborn, Germany",
+      "description": "Assisted in research projects related to ...",
+      "responsibilities": [
+        "Task 1",
+        "Task 2"
+      ]
+    }
+  ]

@@ -1,14 +1,15 @@
 import { Component, effect, HostBinding, inject, OnInit, PLATFORM_ID, Renderer2 } from '@angular/core';
 import { ThemeStore } from './store/themestore';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AboutCardComponent } from './about-card/about-card.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AboutCardComponent } from './components/about-card/about-card.component';
 import { isPlatformBrowser } from '@angular/common';
-import { AboutSectionComponent } from './about-section/about-section.component';
+import { AboutSectionComponent } from './components/about-section/about-section.component';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component'; 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent],
+  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

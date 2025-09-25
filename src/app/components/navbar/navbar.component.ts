@@ -1,5 +1,5 @@
 import { Component, inject, signal } from '@angular/core';
-import { ThemeStore } from '../store/themestore';
+import { ThemeStore } from '../../store/themestore';
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatButtonModule } from '@angular/material/button'
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { HIGHLIGHTS, STATS, Highlight, Stat } from '../backend_data/about.data';
+import { HIGHLIGHTS, STATS, Highlight, Stat } from '../../backend_data/about.data';
 import { NgClass } from '@angular/common'; 
 
 @Component({
