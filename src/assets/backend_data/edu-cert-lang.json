@@ -1,0 +1,16 @@
+{
+    "education": [
+      { "degree": "B.E. Computer Engineering", "school": "XYZ Institute of Technology", "year": "2018 – 2022", "location": "Mumbai, IN" },
+      { "degree": "HSC (Science)", "school": "ABC Junior College", "year": "2016 – 2018", "location": "Mumbai, IN" }
+    ],
+    "certificates": [
+      { "name": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "year": "2024" },
+      { "name": "Kubernetes for Developers", "issuer": "Udemy", "year": "2023" },
+      { "name": "Angular Advanced", "issuer": "Coursera", "year": "2022" }
+    ],
+    "languages": [
+      { "name": "English", "level": "Professional" },
+      { "name": "Hindi", "level": "Native" },
+      { "name": "Marathi", "level": "Fluent" }
+    ]
+  }
