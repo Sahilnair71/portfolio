@@ -6,10 +6,11 @@ import { AboutCardComponent } from './components/about-card/about-card.component
 import { isPlatformBrowser } from '@angular/common';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component'; 
+import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent],
+  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent,FeaturedProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

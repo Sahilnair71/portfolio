@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Superhero Team Builder",
+      "description": "Explore heroes, build dream teams, and simulate battles with balanced recommendations.",
+      "tech": ["React", "Next.js", "Node.js", "Docker", "Openshift"],
+      "image": "assets/images/projects/superhero-team.jpg",
+      "github": "https://github.com/youruser/superhero-team-builder"
+    },
+    {
+      "name": "AI Notes Assistant",
+      "description": "Smart note-taking with semantic search, summarization, and offline-first sync.",
+      "tech": ["Angular", "NestJS", "PostgreSQL", "Redis"],
+      "image": "assets/images/projects/ai-notes.jpg",
+      "github": "https://github.com/youruser/ai-notes-assistant"
+    },
+    {
+      "name": "Deploy Dashboard",
+      "description": "A deploy orchestration UI with real-time logs, rollbacks, and health analytics.",
+      "tech": ["SvelteKit", "Go", "gRPC", "Kubernetes"],
+      "image": "assets/images/projects/deploy-dashboard.jpg",
+      "github": "https://github.com/youruser/deploy-dashboard"
+    }
+  ]
