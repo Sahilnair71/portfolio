@@ -7,10 +7,11 @@ import { isPlatformBrowser } from '@angular/common';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component'; 
 import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent,FeaturedProjectsComponent],
+  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent,FeaturedProjectsComponent,SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
