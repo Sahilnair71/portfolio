@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
-    "deploy:gh": "ng build --configuration gh-pages"
+    "deploy:gh": "ng build --configuration=production --output-path=dist/portfolio/browser --base-href=/portfolio/",
+    "build:gh": "ng build --configuration=production --output-path=dist/portfolio/browser --base-href=/portfolio/ --no-ssr"
   },
   "private": true,
   "dependencies": {
