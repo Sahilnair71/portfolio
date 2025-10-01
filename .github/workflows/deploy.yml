@@ -18,6 +18,11 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Grants write access to the repository contents (required for gh-pages deployment)
+      pages: write    # Best practice for gh-pages deployments (though 'contents: write' often suffices)
+      id-token: write 
     
     env:
       NODE_VERSION: '20'       
