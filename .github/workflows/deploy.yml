@@ -51,7 +51,7 @@ jobs:
       - name: Deploy to GitHub Pages
         # The 'if' condition is simplified to run ONLY on the 'push' event to the master branch.
         # This resolves the skipping issue after PR merge.
-        if: github.event_name == 'push'
+        # if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
