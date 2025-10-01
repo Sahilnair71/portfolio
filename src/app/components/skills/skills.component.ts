@@ -1,8 +1,8 @@
 // src/app/components/skills/skills.component.ts
 
-import { Component, inject, signal, computed, OnInit } from '@angular/core';
+import { Component, inject, signal, computed, OnInit,PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule,isPlatformBrowser } from '@angular/common'; 
 
 // Define the types
 type SkillCategory = 'frontend' | 'backend' | 'devops';
@@ -22,6 +22,7 @@ type FilterKey = 'all' | SkillCategory;
 })
 export class SkillsComponent implements OnInit {
   private readonly http = inject(HttpClient);
+  private readonly platformId = inject(PLATFORM_ID)
 
   // Writable signal for ALL skills data
   readonly allSkills = signal<Skill[]>([]); 
@@ -50,18 +51,22 @@ export class SkillsComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    // Load data from JSON file using HttpClient's .toPromise() (or .pipe(first()).toPromise() in Angular 17+)
-    // to populate the signal.
-    this.http.get<Skill[]>('assets/backend_data/skills.json').toPromise()
-      .then(data => {
-        if (data) {
-            this.allSkills.set(data); 
-        }
-      })
-      .catch(error => {
-        console.error("Error loading skills data:", error);
-      });
+    // CRITICAL: Platform check added here
+    if (isPlatformBrowser(this.platformId)) { 
+      // Load data from JSON file using HttpClient's .toPromise() (or .pipe(first()).toPromise() in Angular 17+)
+      // to populate the signal.
+      this.http.get<Skill[]>('assets/backend_data/skills.json').toPromise()
+        .then(data => {
+          if (data) {
+              this.allSkills.set(data); 
+          }
+        })
+        .catch(error => {
+          console.error("Error loading skills data:", error);
+        });
+    }
   }
+
 
   setFilter(f: FilterKey) {
     this.filter.set(f);
