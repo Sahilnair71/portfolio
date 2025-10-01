@@ -28,7 +28,7 @@ jobs:
       NODE_VERSION: '20'       
       # CRITICAL CORRECTION: Use 'dist/portfolio' based on your build output.
       # The output message "dist/portfolio" indicates this is the correct path.
-      DIST_DIR: 'dist/portfolio' 
+      DIST_DIR: 'dist/portfolio/browser' 
 
     steps:
       - name: Checkout Repository
@@ -45,7 +45,7 @@ jobs:
 
       # 5. Build the Angular Application
       - name: Build Angular App for GH Pages 🛠️
-        run: npm run deploy:gh 
+        run: ng build --configuration=production --base-href=/portfolio/ --no-ssr 
 
       # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
