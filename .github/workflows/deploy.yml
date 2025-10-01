@@ -45,7 +45,7 @@ jobs:
 
       # 5. Build the Angular Application
       - name: Build Angular App for GH Pages 🛠️
-        run: ng build --configuration=production --base-href=/portfolio/ --output-mode=browser
+        run: npm run deploy:gh
 
       # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
