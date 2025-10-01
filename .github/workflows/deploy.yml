@@ -28,7 +28,7 @@ jobs:
       NODE_VERSION: '20'       
       # CRITICAL CORRECTION: Use 'dist/portfolio' based on your build output.
       # The output message "dist/portfolio" indicates this is the correct path.
-      DIST_DIR: 'dist/portfolio' 
+      DIST_DIR: 'dist/portfolio/browser' 
 
     steps:
       - name: Checkout Repository
@@ -45,13 +45,13 @@ jobs:
 
       # 5. Build the Angular Application
       - name: Build Angular App for GH Pages 🛠️
-        run: npm run deploy:gh 
+        run: npm run deploy:gh
 
       # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         # The 'if' condition is simplified to run ONLY on the 'push' event to the master branch.
         # This resolves the skipping issue after PR merge.
-        if: github.event_name == 'push'
+        # if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
