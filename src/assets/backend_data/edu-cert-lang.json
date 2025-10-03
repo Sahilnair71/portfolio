@@ -1,7 +1,7 @@
 {
     "education": [
-      { "degree": "B.E. Computer Engineering", "school": "XYZ Institute of Technology", "year": "2018 – 2022", "location": "Mumbai, IN" },
-      { "degree": "HSC (Science)", "school": "ABC Junior College", "year": "2016 – 2018", "location": "Mumbai, IN" }
+      { "degree": "Bachelors Computer Engineering", "school": "Mumbai University", "year": "2017– 2021", "location": "Mumbai, IN" },
+      { "degree": "Master in Computer Science", "school": "Paderborn University", "year": "2021 – 2024", "location": "Paderborn, DE" }
     ],
     "certificates": [
       { "name": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "year": "2024" },
@@ -9,8 +9,8 @@
       { "name": "Angular Advanced", "issuer": "Coursera", "year": "2022" }
     ],
     "languages": [
-      { "name": "English", "level": "Professional" },
+      { "name": "English", "level": "Fluent(C1)" },
       { "name": "Hindi", "level": "Native" },
-      { "name": "Marathi", "level": "Fluent" }
+      {"name": "Deutsch", "level": "Intermediate(B1)" }
     ]
   }

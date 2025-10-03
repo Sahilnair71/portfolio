@@ -9,10 +9,11 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
 import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EduCertLangComponent } from './components/edu-cert-lang/edu-cert-lang.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent,FeaturedProjectsComponent,SkillsComponent,EduCertLangComponent],
+  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent,FeaturedProjectsComponent,SkillsComponent,EduCertLangComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
