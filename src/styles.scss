@@ -28,3 +28,7 @@ body {
       --text-main: #e5e7eb;   /* slate-200 for dark */
     }
   }
+
+  html {
+    scroll-behavior: smooth;
+  }

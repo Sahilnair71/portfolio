@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { HIGHLIGHTS, STATS, Highlight, Stat } from '../../backend_data/about.data';
 import { NgClass } from '@angular/common'; 
@@ -13,4 +13,6 @@ import { NgClass } from '@angular/common';
 export class AboutSectionComponent {
   highlights: Highlight[] = HIGHLIGHTS;
   stats: Stat[] = STATS;
+
+ 
 }
