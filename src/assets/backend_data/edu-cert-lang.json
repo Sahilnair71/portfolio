@@ -4,9 +4,7 @@
       { "degree": "Master in Computer Science", "school": "Paderborn University", "year": "2021 – 2024", "location": "Paderborn, DE" }
     ],
     "certificates": [
-      { "name": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "year": "2024" },
-      { "name": "Kubernetes for Developers", "issuer": "Udemy", "year": "2023" },
-      { "name": "Angular Advanced", "issuer": "Coursera", "year": "2022" }
+      { "name": "Introduction to Python", "issuer": "Microsoft", "year": "2017" }
     ],
     "languages": [
       { "name": "English", "level": "Fluent(C1)" },
