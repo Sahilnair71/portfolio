@@ -10,10 +10,11 @@ import { FeaturedProjectsComponent } from './components/featured-projects/featur
 import { SkillsComponent } from './components/skills/skills.component';
 import { EduCertLangComponent } from './components/edu-cert-lang/edu-cert-lang.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent,FeaturedProjectsComponent,SkillsComponent,EduCertLangComponent,FooterComponent],
+  imports: [RouterOutlet, NavbarComponent, AboutCardComponent, AboutSectionComponent, WorkExperienceComponent,FeaturedProjectsComponent,SkillsComponent,EduCertLangComponent,FooterComponent,GetInTouchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

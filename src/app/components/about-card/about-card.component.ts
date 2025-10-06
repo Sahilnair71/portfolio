@@ -1,6 +1,6 @@
 
-import { Component, signal, OnDestroy, OnInit, Inject, NgZone , PLATFORM_ID} from '@angular/core';
-import {  isPlatformBrowser } from '@angular/common';
+import { Component, signal, OnDestroy, OnInit, Inject, NgZone , PLATFORM_ID, inject} from '@angular/core';
+import {  isPlatformBrowser, ViewportScroller } from '@angular/common';
 
 
 
@@ -13,7 +13,9 @@ import {  isPlatformBrowser } from '@angular/common';
 export class AboutCardComponent implements OnInit, OnDestroy {
   name = 'Sahil Nair';
   titlePrefix = 'I am a';
-  roles = ['Software Developer', 'DevOps Engineer', 'Full Stack Developer', 'Angular Developer'];
+  roles = ['Software Developer', 'DevOps Engineer', 'Full Stack Developer', 'FrontEnd Engineer'];
+  private scroller = inject(ViewportScroller);
+ 
 
   displayed = signal<string>('');   // typed text
   private i = 0;                    // role index
@@ -62,5 +64,10 @@ export class AboutCardComponent implements OnInit, OnDestroy {
 
   private sleep(ms: number) {
     return new Promise<void>(r => setTimeout(r, ms));
+  }
+
+  scrollToSection(sectionId: string): void {
+     
+    this.scroller.scrollToAnchor(sectionId);
   }
 }
